@@ -5,33 +5,29 @@ angular.module('starter.controllers', ['ionic'])
 }])
 
 .controller('MainCtrl', ['$scope', 'Shared', function($scope, Shared) {
-  $scope.pageInit = function() {
-    Shared.barStyle = 'bar-calm';
-  };
 
-  $scope.pageInit();
+}])
+
+.controller('GeneralCtrl', ['$scope', 'Shared', function($scope, Shared) {
+
 }])
 
 .controller('WalkCtrl', ['$scope', 'Shared', function($scope, Shared) {
-  $scope.pageInit = function() {
-    Shared.barStyle = 'bar-calm';
-  };
 
-  $scope.pageInit();
 }])
 
 .controller('CarCtrl', ['$scope', 'Shared', function($scope, Shared) {
-  $scope.pageInit = function() {
-    Shared.barStyle = 'bar-energized';
-  };
 
-  $scope.pageInit();
 }])
 
 .controller('HouseCtrl', ['$scope', 'Shared', function($scope, Shared) {
-  $scope.pageInit = function() {
-    Shared.barStyle = 'bar-calm';
-  };
 
-  $scope.pageInit();
 }])
+
+.controller('ImmigrationCtrl', ['$scope', 'Shared', function($scope, Shared) {
+
+}])
+
+.controller('BillCtrl', ['$scope', 'Shared', function($scope, Shared) {
+  
+}]);

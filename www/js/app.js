@@ -30,6 +30,11 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       templateUrl: 'templates/main.html',
       controller: 'MainCtrl'
     })
+    .state('general', {
+      url: '/general',
+      templateUrl: 'templates/general.html',
+      controller: 'GeneralCtrl'
+    })
     .state('walk', {
       url: '/walk',
       templateUrl: 'templates/walk.html',
@@ -44,6 +49,16 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       url: '/house',
       templateUrl: 'templates/house.html',
       controller: 'HouseCtrl'
+    })
+    .state('immigration', {
+      url: '/immigration',
+      templateUrl: 'templates/immigration.html',
+      controller: 'ImmigrationCtrl'
+    })
+    .state('bill', {
+      url: '/bill',
+      templateUrl: 'templates/bill.html',
+      controller: 'BillCtrl'
     });
 
   $urlRouterProvider.otherwise('/main');
