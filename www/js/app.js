@@ -29,6 +29,21 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       url: '/main',
       templateUrl: 'templates/main.html',
       controller: 'MainCtrl'
+    })
+    .state('walk', {
+      url: '/walk',
+      templateUrl: 'templates/walk.html',
+      controller: 'WalkCtrl'
+    })
+    .state('car', {
+      url: '/car',
+      templateUrl: 'templates/car.html',
+      controller: 'CarCtrl'
+    })
+    .state('house', {
+      url: '/house',
+      templateUrl: 'templates/house.html',
+      controller: 'HouseCtrl'
     });
 
   $urlRouterProvider.otherwise('/main');
