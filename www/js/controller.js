@@ -1,17 +1,37 @@
 angular.module('starter.controllers', ['ionic'])
 
-.controller('MainCtrl', ['$scope', function($scope) {
-
+.controller('AppCtrl', ['$scope', 'Shared', function($scope, Shared) {
+  $scope.barStyle = Shared.barStyle;
 }])
 
-.controller('WalkCtrl', ['$scope', function($scope) {
+.controller('MainCtrl', ['$scope', 'Shared', function($scope, Shared) {
+  $scope.pageInit = function() {
+    Shared.barStyle = 'bar-calm';
+  };
 
+  $scope.pageInit();
 }])
 
-.controller('CarCtrl', ['$scope', function($scope) {
+.controller('WalkCtrl', ['$scope', 'Shared', function($scope, Shared) {
+  $scope.pageInit = function() {
+    Shared.barStyle = 'bar-calm';
+  };
 
+  $scope.pageInit();
 }])
 
-.controller('HouseCtrl', ['$scope', function($scope) {
-  
-}]);
+.controller('CarCtrl', ['$scope', 'Shared', function($scope, Shared) {
+  $scope.pageInit = function() {
+    Shared.barStyle = 'bar-energized';
+  };
+
+  $scope.pageInit();
+}])
+
+.controller('HouseCtrl', ['$scope', 'Shared', function($scope, Shared) {
+  $scope.pageInit = function() {
+    Shared.barStyle = 'bar-calm';
+  };
+
+  $scope.pageInit();
+}])
