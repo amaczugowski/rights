@@ -50,10 +50,25 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       templateUrl: 'templates/house.html',
       controller: 'HouseCtrl'
     })
+    .state('arrested', {
+      url: '/arrested',
+      templateUrl: 'templates/arrested.html',
+      controller: 'ArrestedCtrl'
+    })
     .state('immigration', {
       url: '/immigration',
       templateUrl: 'templates/immigration.html',
       controller: 'ImmigrationCtrl'
+    })
+    .state('custody', {
+      url: '/custody',
+      templateUrl: 'templates/custody.html',
+      controller: 'CustodyCtrl'
+    })
+    .state('rights', {
+      url: '/rights',
+      templateUrl: 'templates/rights.html',
+      controller: 'RightsCtrl'
     })
     .state('bill', {
       url: '/bill',

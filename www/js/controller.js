@@ -24,10 +24,22 @@ angular.module('starter.controllers', ['ionic'])
 
 }])
 
+.controller('ArrestedCtrl', ['$scope', 'Shared', function($scope, Shared) {
+
+}])
+
 .controller('ImmigrationCtrl', ['$scope', 'Shared', function($scope, Shared) {
 
 }])
 
+.controller('CustodyCtrl', ['$scope', 'Shared', function($scope, Shared) {
+
+}])
+
+.controller('RightsCtrl', ['$scope', 'Shared', function($scope, Shared) {
+
+}])
+
 .controller('BillCtrl', ['$scope', 'Shared', function($scope, Shared) {
-  
+
 }]);
